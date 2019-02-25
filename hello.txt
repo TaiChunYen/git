@@ -34,6 +34,12 @@ git show
 git status 
 列出目前的檔案狀態
 
+git pull
+將舊版本拉下來和新版本融合
+
+git push
+將融合後的版本上傳
+
 git remote -v
 列出目前專案的使用倉庫(repository)
 
