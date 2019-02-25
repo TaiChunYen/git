@@ -33,3 +33,9 @@ git show
  
 git status 
 列出目前的檔案狀態
+
+git remote -v
+列出目前專案的使用倉庫(repository)
+
+git remote set-url origin 改名後的網址
+指定現在想使用的倉庫位置
