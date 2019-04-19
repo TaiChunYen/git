@@ -37,7 +37,7 @@ git status
 git pull
 將舊版本拉下來和新版本融合
 
-git push
+git push -u origin master
 將融合後的版本上傳
 
 git remote -v
