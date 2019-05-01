@@ -40,6 +40,9 @@ git pull
 git push -u origin master
 將融合後的版本上傳
 
+git remote rm origin
+把舊的/別人的origin刪掉,之後就能換上新的/自己的origin
+
 git remote -v
 列出目前專案的使用倉庫(repository)
 
