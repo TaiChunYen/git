@@ -48,3 +48,9 @@ git remote -v
 
 git remote set-url origin 改名後的網址
 指定現在想使用的倉庫位置
+
+git rev-list --objects --all | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' | sed -n 's/^blob //p' | sort --numeric-sort --key=2 | cut -c 1-12,41- | $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest
+將Git倉庫中的檔案依照大小排序並顯示出來
+
+git filter-branch --force --tree-filter 'rm -f -r "檔案路徑"' -- --all
+將已經被commit進Git倉庫的檔案刪除
